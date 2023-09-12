@@ -33,7 +33,7 @@ llm = LlamaCpp(
     model_path="./models/llama-7b.ggmlv3.q4_0.bin",
     n_gpu_layers=4,
     n_ctx=512,
-    temperature=.2
+    temperature=.8
     )
 
 # Define a template
