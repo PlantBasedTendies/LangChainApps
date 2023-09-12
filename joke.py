@@ -1,7 +1,8 @@
 '''
    A 'hello world' script to explore LangChain. It should
    be noted that in the Local LLM community, it is not advised
-   to use LangChain in production at this time.
+   to use LangChain in production at this time. Meets most PEP8
+   guidelines.
    Date: 09/09/2023
 
    Sample Command Line:
@@ -15,30 +16,28 @@ import argparse
 import sys
 
 # Add arguments
-parser = argparse.ArgumentParser(description='Provide a (1) style of joke and a (2) joke topic')
-parser.add_argument("--adjective", type=str, help="Style of joke, i.e. mean, funny, sad")
-parser.add_argument("--content", type=str, help="Joke subject, i.e. babies, social-media, sports")
+parser = argparse.ArgumentParser(description='Specify /style/ of joke and a joke /topic/')
+parser.add_argument("--adjective", type=str, help="Joke style: e.g. mean, funny, sad")
+parser.add_argument("--content", type=str, help="Joke topic: e.g. babies, social-media, sports")
 args = parser.parse_args()
 
 # Check for command line arguments
 if not sys.argv[1:]:
     print("\nPlease specify two arguments to run this script - style of joke and subject of joke - in the following manner: " + "\n\n" +
-          
+
           "$ python joke.py --adjective \033[1mfunny\033[0m --content \033[1mbabies\033[0m" + "\n")
     sys.exit()
 
 # Import LLM
 llm = LlamaCpp(
-#    model_path="~/AI/LLMs/oobabooga/text-generation-webui/models/codallama_models/codellama-34b-instruct.Q3_K_S.gguf",
     model_path="./models/llama-7b.ggmlv3.q4_0.bin",
     n_gpu_layers=4,
     n_ctx=512,
-    temperature=.5
-    )
+    temperature=.5)
 
 # Define a template
 print("\n")
-template= """Instruction: Tell me a {adjective} joke about {content}.
+template = """Instruction: Tell me a {adjective} joke about {content}.
 Reply: """
 
 # Create prompt from template
@@ -59,5 +58,5 @@ formatted_prompt = prompt.format(adjective=str(args.adjective), content=str(args
 print(formatted_prompt)
 
 # Prompt the LLM
-result = llm(prompt = formatted_prompt, llm = llm, stop=["Instruction:", "\n"])
+result = llm(prompt=formatted_prompt, llm=llm, stop=["Instruction:", "\n"])
 print(result)
