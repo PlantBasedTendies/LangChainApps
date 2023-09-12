@@ -17,7 +17,7 @@ import sys
 # Add arguments
 parser = argparse.ArgumentParser(description='Provide a (1) style of joke and a (2) joke topic')
 parser.add_argument("--adjective", type=str, help="Style of joke, i.e. mean, funny, sad")
-parser.add_argument("--content", type=str, help="Joke subject, i.e. babies, social media, sports")
+parser.add_argument("--content", type=str, help="Joke subject, i.e. babies, social-media, sports")
 args = parser.parse_args()
 
 # Check for command line arguments
