@@ -33,13 +33,13 @@ llm = LlamaCpp(
     model_path="./models/llama-7b.ggmlv3.q4_0.bin",
     n_gpu_layers=4,
     n_ctx=512,
-    temperature=.8
+    temperature=.5
     )
 
 # Define a template
 print("\n")
-template= """Q: Tell me a {adjective} joke about {content}.
-A: """
+template= """Instruction: Tell me a {adjective} joke about {content}.
+Reply: """
 
 # Create prompt from template
 prompt = PromptTemplate.from_template(template)
@@ -59,5 +59,5 @@ formatted_prompt = prompt.format(adjective=str(args.adjective), content=str(args
 print(formatted_prompt)
 
 # Prompt the LLM
-result = llm(prompt = formatted_prompt, llm = llm, stop=["Q:", "\n"])
+result = llm(prompt = formatted_prompt, llm = llm, stop=["Instruction:", "\n"])
 print(result)
