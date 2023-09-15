@@ -31,7 +31,7 @@ if not sys.argv[1:]:
 # Import LLM
 llm = LlamaCpp(
     model_path="./models/llama-7b.ggmlv3.q4_0.bin",
-    n_gpu_layers=5,
+    n_gpu_layers=4,
     n_ctx=512,
     temperature=.7)
 
@@ -39,7 +39,7 @@ llm = LlamaCpp(
 print("\n")
 template = """Acting as a comedian, write a response that completes the request.
 
-### Instruction: Tell me a {adjective} joke about {content}
+### Instruction: Write a {adjective} joke about {content}
 ### Response: """
 
 # Create prompt from template
