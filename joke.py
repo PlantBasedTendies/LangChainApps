@@ -31,14 +31,16 @@ if not sys.argv[1:]:
 # Import LLM
 llm = LlamaCpp(
     model_path="./models/llama-7b.ggmlv3.q4_0.bin",
-    n_gpu_layers=4,
+    n_gpu_layers=5,
     n_ctx=512,
-    temperature=.5)
+    temperature=.7)
 
 # Define a template
 print("\n")
-template = """Instruction: Tell me a {adjective} joke about {content}.
-Reply: """
+template = """Acting as a comedian, write a response that completes the request.
+
+### Instruction: Tell me a {adjective} joke about {content}
+### Response: """
 
 # Create prompt from template
 prompt = PromptTemplate.from_template(template)
