@@ -14,7 +14,7 @@ db
 ### :rofl: **joke.py**: 
 A CLI python script which:
 - Leverages an Open Source local LLM, therefore no OpenAI API Key is necessary, and thus no cost
-- Produces custom jokes on the fly
+- Produces custom jokes on the fly \
 *A 7B parameter LLM is recommended for this type of exercise.
 
 --------
