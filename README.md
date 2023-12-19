@@ -1,6 +1,7 @@
 # LangChain Experimentation
 LangChain Experimentation is a repo to store LLM experiments conducted with LangChain.
-
+\
+\
 :robot: **AI_Executive_Order_LangChain.ipynb**: \
 A notebook which chunks and vectorizes the **October 2023
 United States _Aritificial Intelligence Executive Order_**, stores that locally in a Weaviate vector
