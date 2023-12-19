@@ -7,7 +7,6 @@ db, and uses an OpenAI API Key and GPT 3.5 Turbo to answer questions about the E
 
 **joke.py** leverages a local LLM to produce custom humor.
 
-More projects will be uploaded as they get refined.
 
 Requirements include:
 * dotenv
