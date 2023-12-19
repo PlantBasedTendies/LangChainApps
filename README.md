@@ -16,7 +16,7 @@ A 7B parameter LLM is recommended for this type of exercise.
 
 --------
 
-:toolbox: Requirements include:
+:wrench: Requirements include:
 * dotenv
 * langchain
 * argparse
