@@ -9,7 +9,7 @@ db, and uses an OpenAI API Key / GPT 3.5 Turbo to answer questions about the EO.
 --------
 
 **joke.py**: \
-A python script which leverages an Open Source local LLM - therefore no OpenAI API Key is necessary (thus no cost) - to produce custom humor.
+A CLI python script which leverages an Open Source local LLM - therefore no OpenAI API Key is necessary (thus no cost) - to produce custom humor.
 A 7B parameter SLM (Small Language Model) is recommended for this type of exercise.
 
 --------
