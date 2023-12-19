@@ -4,7 +4,7 @@ LangChainApps is a repo to store LLM experiments conducted with LangChain.
 --------
 ### :robot: **AI_Executive_Order_LangChain.ipynb**: 
 A Retrieval Augmented Generation exercise notebook which outlines the process of chunking and vectorizing the [**October 2023
-United States _Aritificial Intelligence Executive Order_**](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/), stores those vector embeddings locally in a Weaviate vector
+United States _Artificial Intelligence Executive Order_**](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/), stores those vector embeddings locally in a Weaviate vector
 db, and uses an OpenAI API Key / GPT 3.5 Turbo to answer questions about the EO.
 
 --------
