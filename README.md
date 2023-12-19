@@ -6,6 +6,7 @@ United States _Aritificial Intelligence Executive Order_**, stores that locally 
 db, and uses an OpenAI API Key and GPT 3.5 Turbo to answer questions about the EO.
 
 **joke.py** leverages a local LLM - and thus no OpenAI API Key (or cost) necessary - to produce custom humor.
+A 7B parameter SLM (Small Language Model) is recommended for this type of exercise.
 
 
 Requirements include:
