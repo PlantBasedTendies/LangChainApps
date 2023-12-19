@@ -5,7 +5,7 @@ LangChain Experimentation is a repo to store LLM experiments conducted with Lang
 \
 :robot: **AI_Executive_Order_LangChain.ipynb**: \
 A notebook which outlines the process of chunking and vectorizing the **October 2023
-United States _Aritificial Intelligence Executive Order_**, stores that locally in a Weaviate vector
+United States _Aritificial Intelligence Executive Order_**, stores those vector embeddings locally in a Weaviate vector
 db, and uses an OpenAI API Key / GPT 3.5 Turbo to answer questions about the EO.
 
 --------
