@@ -1,7 +1,6 @@
 # LangChainApps
 LangChainApps is a repo to store LLM experiments conducted with LangChain.
 \
-\
 
 ## :robot: **AI_Executive_Order_LangChain.ipynb**: 
 \
