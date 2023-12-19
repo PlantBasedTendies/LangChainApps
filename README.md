@@ -1,5 +1,5 @@
-# LangChain Experimentation
-LangChain Experimentation is a repo to store LLM experiments conducted with LangChain.
+# LangChainApps
+LangChainApps is a repo to store LLM experiments conducted with LangChain.
 \
 \
 \
