@@ -15,3 +15,5 @@ Requirements include:
 * argparse
 * weaviate
 * sys
+
+To run the notebook, you will need to populate **default.env** with your OpenAI API key and rename it to **.env**
