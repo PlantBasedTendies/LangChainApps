@@ -23,4 +23,5 @@ A 7B parameter LLM is recommended for this type of exercise.
 * weaviate
 * sys
 \
+\
 :gear: To run the notebook, you will need to populate **default.env** with your OpenAI API key and rename it to **.env**
