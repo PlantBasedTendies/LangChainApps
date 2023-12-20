@@ -24,6 +24,7 @@ A CLI python script which:
 * dotenv
 * langchain
 * argparse
+* weaviate
 * sys
 
 \
