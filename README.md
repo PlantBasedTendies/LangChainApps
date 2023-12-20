@@ -29,4 +29,5 @@ A CLI python script which:
 
 \
 :gear: To run the notebook, you will need to populate **default.env** with your OpenAI API key and rename it to **.env**
+\
 :gear: Function logging using @decorators allows for debugging
