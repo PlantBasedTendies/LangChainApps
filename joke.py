@@ -1,8 +1,6 @@
 '''
-   A 'hello world' script to explore LangChain. It should
-   be noted that in the Local LLM community, it is not advised
-   to use LangChain in production at this time. Meets most PEP8
-   guidelines.
+   A 'hello world' script to experiment with LangChan and
+   Local LLMs. Meets most PEP8 guidelines.
    Date: 09/09/2023
 
    Sample Command Line:
@@ -39,23 +37,26 @@ llm = LlamaCpp(
 print("\n")
 template = """Acting as a comedian, write a response that completes the request.
 
-### Instruction: Write a {adjective} joke about {content}
-### Response: """
+Instruction: Write a {adjective} joke about {content}
+Response: 
+"""
 
 # Create prompt from template
 prompt = PromptTemplate.from_template(template)
 
+"""
 # Check prompt variable
-# print(prompt)
+print(prompt)
 
 # Check input variables
-# print(prompt.input_variables)
+print(prompt.input_variables)
 
 # Check prompt template
-# print(prompt.template)
+print(prompt.template)
+"""
 
 # Format the prompt and print it
-# formatted_prompt = prompt.format(adjective="mean", content="babies")
+
 formatted_prompt = prompt.format(adjective=str(args.adjective), content=str(args.content))
 print(formatted_prompt)
 
