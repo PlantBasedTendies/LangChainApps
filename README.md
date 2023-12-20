@@ -8,11 +8,7 @@ A Retrieval Augmented Generation python notebook which outlines the process of:
 - Storing the vector embeddings locally in a Weaviate vector
 db
 - Using an OpenAI API Key / GPT 3.5 Turbo to answer questions about the EO
-
-\
-:gear: To run the notebook, you will need to populate **default.env** with your OpenAI API key and rename it to **.env**
-\
-:ant: Function logging using @decorators allows for debugging
+  
 --------
 
 ### :rofl: **joke.py**
@@ -30,3 +26,8 @@ A CLI python script which:
 * argparse
 * weaviate
 * sys
+
+\
+:gear: To run the notebook, you will need to populate **default.env** with your OpenAI API key and rename it to **.env**
+\
+:ant: Function logging using @decorators allows for debugging
