@@ -21,11 +21,9 @@ A CLI python script which:
 --------
 
 :wrench: Requirements include:
-* dotenv
-* langchain
 * argparse
+* langchain
 * weaviate
-* sys
 
 \
 :gear: To run the notebook, you will need to populate **default.env** with your OpenAI API key and rename it to **.env**
